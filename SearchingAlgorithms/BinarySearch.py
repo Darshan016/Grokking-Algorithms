@@ -3,7 +3,7 @@ def binarySearch(arr,key):
     high=len(arr)-1
 
     while low<=high:
-        mid=(low+high)
+        mid=(low+high)//2
         guess=arr[mid]
         if guess==key:
             return mid
@@ -14,4 +14,4 @@ def binarySearch(arr,key):
     return None
 
 arr=[15,17,20,25,35,50,129,225]
-print(binarySearch(arr,500))
+print(binarySearch(arr,129))
